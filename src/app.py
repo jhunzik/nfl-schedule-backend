@@ -16,7 +16,9 @@ class CustomJSONResponse(JSONResponse):
             allow_nan=False,
             indent=None,
             separators=(",", ":"),
-            default=lambda o: o.isoformat() if isinstance(o, datetime.datetime) else o.__dict__,
+            default=lambda o: o.isoformat()
+            if isinstance(o, datetime.datetime)
+            else o.__dict__,
         ).encode("utf-8")
 
 
