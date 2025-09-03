@@ -3,34 +3,34 @@
 ## Phase 1: Core Foundation
 
 ### Project Setup
-- [ ] Create Python 3 project structure with standard directories (`src/`, `tests/`, etc.)
-- [ ] Setup minimal `requirements.txt` with Starlette and uvicorn
-- [ ] Create basic Starlette application with health check endpoint (`GET /health`)
-- [ ] Add environment configuration loading using `os.environ`
-- [ ] Setup basic logging configuration using standard `logging` module
+- [x] Create Python 3 project structure with standard directories (`src/`, `tests/`, etc.)
+- [x] Setup minimal `requirements.txt` with Starlette and uvicorn
+- [x] Create basic Starlette application with health check endpoint (`GET /health`)
+- [x] Add environment configuration loading using `os.environ`
+- [x] Setup basic logging configuration using standard `logging` module
 
 ### ESPN API Integration
-- [ ] Create ESPN API client using `urllib.request` for HTTP calls
-- [ ] Implement function to fetch scoreboard data from ESPN endpoint
-- [ ] Add basic error handling for network failures and invalid responses
-- [ ] Create unit tests for ESPN API client with mock responses
-- [ ] Add request timeout configuration (30 seconds default)
+- [x] Create ESPN API client using `urllib.request` for HTTP calls
+- [x] Implement function to fetch scoreboard data from ESPN endpoint
+- [x] Add basic error handling for network failures and invalid responses
+- [x] Create unit tests for ESPN API client with mock responses
+- [x] Add request timeout configuration (30 seconds default)
 
 ### Data Models
-- [ ] Define Python dataclass or dict structure for Game objects
-- [ ] Create function to parse ESPN JSON response into Game objects
-- [ ] Implement ESPN season type to our type mapping (1→pre-season, 2→regular-season, etc.)
-- [ ] Add timezone conversion from ESPN timestamps to UTC using `datetime` and `zoneinfo`
-- [ ] Create unit tests for data parsing with sample ESPN responses
+- [x] Define Python dataclass or dict structure for Game objects
+- [x] Create function to parse ESPN JSON response into Game objects
+- [x] Implement ESPN season type to our type mapping (1→pre-season, 2→regular-season, etc.)
+- [x] Add timezone conversion from ESPN timestamps to UTC using `datetime` and `zoneinfo`
+- [x] Create unit tests for data parsing with sample ESPN responses
 
 ## Phase 2: API Endpoints
 
 ### Today's Games Endpoint
-- [ ] Implement `GET /games/today` endpoint in Starlette
-- [ ] Add logic to filter games by current date (using system timezone)
-- [ ] Return JSON response matching specified format
-- [ ] Add error handling for empty results
-- [ ] Create integration test for today's games endpoint
+- [x] Implement `GET /games/today` endpoint in Starlette
+- [x] Add logic to filter games by current date (using system timezone)
+- [x] Return JSON response matching specified format
+- [x] Add error handling for empty results
+- [x] Create integration test for today's games endpoint
 
 ### Weekly Games Endpoint
 - [ ] Implement `GET /games/week` endpoint for current NFL week
